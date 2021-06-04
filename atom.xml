@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2021-06-02T08:39:40.796Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>b</title>
+    <link href="http://yoursite.com/2021/06/02/b/"/>
+    <id>http://yoursite.com/2021/06/02/b/</id>
+    <published>2021-06-02T08:39:40.000Z</published>
+    <updated>2021-06-02T08:39:40.796Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>a</title>
+    <link href="http://yoursite.com/2021/06/02/a/"/>
+    <id>http://yoursite.com/2021/06/02/a/</id>
+    <published>2021-06-02T08:33:45.000Z</published>
+    <updated>2021-06-02T08:56:08.116Z</updated>
+    
+    <content type="html"><![CDATA[<p>AT 计划在计算机上运行的命令和程序。<br>ATTRIB 显示或更改文件属性。<br>BREAK 设置或清除扩展式 CTRL+C 检查。<br>CACLS 显示或修改文件的访问控制列表 (ACLs)。<br>CALL 从另一个批处理程序调用这一个。<br>CD 显示当前目录的名称或将其更改。<br>CHCP 显示或设置活动代码页数。<br>CHDIR 显示当前目录的名称或将其更改。<br>CHKDSK 检查磁盘并显示状态报告。<br>CHKNTFS 显示或修改启动时间磁盘检查。<br>CLS 清除屏幕。<br>CMD 打开另一个 Windows 命令解释程序窗口。<br>COLOR 设置默认控制台前景和背景颜色。<br>COMP 比较两个或两套文件的内容。<br>COMPACT 显示或更改 NTFS 分区上文件的压缩。<br>CONVERT 将 FAT 卷转换成 NTFS。您不能转换当前驱动器。<br>COPY 将至少一个文件复制到另一个位置。<br>DATE 显示或设置日期。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;AT 计划在计算机上运行的命令和程序。&lt;br&gt;
+ATTRIB 显示或更改文件属性。&lt;br&gt;
+BREAK 设置或清除扩展式 CTRL+C 检查。&lt;br&gt;
+CACLS 显示或修改文件的访问控制列表 (ACLs)。&lt;br&gt;
+CALL 从另一个批处理程序调用这一个。&lt;br&gt;
+CD </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>newpapername</title>
+    <link href="http://yoursite.com/2021/06/02/newpapername/"/>
+    <id>http://yoursite.com/2021/06/02/newpapername/</id>
+    <published>2021-06-02T07:25:48.000Z</published>
+    <updated>2021-06-02T07:27:34.734Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="目标"><a class="markdownIt-Anchor" href="#目标">#</a> 目标</h2><p>去除 iconfinder 上 icon 的水印</p><h3 id="原理"><a class="markdownIt-Anchor" href="#原理">#</a> 原理</h3><p>利用水印像素点和原图像素点颜色合并的原理，如果拥有加过水印的图片和水印图片，就可以反向推出原图原像素点的颜色；前提是你得拥有他的水印图片</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;目标&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#目标&quot;&gt;#&lt;/a&gt; 目标&lt;/h2&gt;
+&lt;p&gt;去除 iconfinder 上 icon 的水印&lt;/p&gt;
+&lt;h3 id=&quot;原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; h</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
