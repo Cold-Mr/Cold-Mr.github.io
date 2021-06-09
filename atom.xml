@@ -66,20 +66,21 @@ CD </summary>
   </entry>
   
   <entry>
-    <title>newpapername</title>
-    <link href="http://yoursite.com/2021/06/02/newpapername/"/>
-    <id>http://yoursite.com/2021/06/02/newpapername/</id>
+    <title>用VS Code配置Python开发环境</title>
+    <link href="http://yoursite.com/2021/06/02/%E7%94%A8VS%20Code%E9%85%8D%E7%BD%AEPython%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://yoursite.com/2021/06/02/%E7%94%A8VS%20Code%E9%85%8D%E7%BD%AEPython%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
     <published>2021-06-02T07:25:48.000Z</published>
-    <updated>2021-06-02T07:27:34.734Z</updated>
+    <updated>2021-06-09T07:55:49.909Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="目标"><a class="markdownIt-Anchor" href="#目标">#</a> 目标</h2><p>去除 iconfinder 上 icon 的水印</p><h3 id="原理"><a class="markdownIt-Anchor" href="#原理">#</a> 原理</h3><p>利用水印像素点和原图像素点颜色合并的原理，如果拥有加过水印的图片和水印图片，就可以反向推出原图原像素点的颜色；前提是你得拥有他的水印图片</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="软件准备"><a class="markdownIt-Anchor" href="#软件准备">#</a> 软件准备</h2><p>首先，我们必须先下载好 Python 的安装包和 VScode 的安装包。<br>下载地址如下：<br>Python：<span class="exturl" data-url="aHR0cHM6Ly93d3cucHl0aG9uLm9yZy9kb3dubG9hZHMv">https://www.python.org/downloads/</span><br>VScode：<span class="exturl" data-url="aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20v">https://code.visualstudio.com/</span><br> 大家选择适合自己的版本下载即可。<br>我是 Windows10 64 位的操作系统，所以我 Python 下的是 64 位的最新版，VS Code 下载的是 64 位的最新版。<br>在这里我推荐大家选择 Python3，而不是 Python2.7，不过就算你下载的 Python2.7 此教程依旧适用。</p><h2 id="安装python"><a class="markdownIt-Anchor" href="#安装python">#</a> 安装 python</h2><p><img data-src="https://img-blog.csdnimg.cn/20210318001740967.gif#pic_center" alt="在这里插入图片描述"></p><h2 id="检查python是否安装成功"><a class="markdownIt-Anchor" href="#检查python是否安装成功">#</a> 检查 python 是否安装成功</h2><p>检查方法如下：<br>1、打开 cmd，输入 python，点击回车。<br>2、输入 import this，欣赏下 python 之禅。<br>3、退出、输入 pip list，检查第三方的包正确不。<br>具体过程如图。<br><img data-src="https://img-blog.csdnimg.cn/20210318001927146.gif#pic_center" alt="在这里插入图片描述"></p><h2 id="安装第三方的包"><a class="markdownIt-Anchor" href="#安装第三方的包">#</a> 安装第三方的包</h2><p>通过 python 自带的 pip 工具，安装两个一会儿配置 VScode 需要的包。<br>flake8 和 yapf<br>flake8 会检查编写代码时的不规范的地方和语法错误。<br>yapf 是一个代码格式化工具，可以一键美化代码。<br>安装过程如下：<br>1、在 cmd 输入 pip list 检查是否已存在需要的包<br> 2、输入 pip install flake8 下载安装 flake8<br>3、输入 pip install yapf 下载安装 yapf<br> 具体过程如图。<br><img data-src="https://img-blog.csdnimg.cn/20210318002029585.gif#pic_center" alt="在这里插入图片描述"></p><h2 id="安装vscode"><a class="markdownIt-Anchor" href="#安装vscode">#</a> 安装 VScode</h2><p>安装 VScode 就很简单了，一路 NEXT 就可以了。<br>如图所示：<br><img data-src="https://img-blog.csdnimg.cn/20210318002116969.gif#pic_center" alt="在这里插入图片描述"><br>配置 VScode<br> 安装插件 Chinese 将 VS Code 汉化<br><img data-src="https://img-blog.csdnimg.cn/20210318002551211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>安装 python 插件。<br>1、打开 VScode，按下快捷键 Ctrl+Shift+X，进入插件管理页面。<br>2、在搜索栏输入 python。<br>3、选择插件，点击安装。<br><img data-src="https://img-blog.csdnimg.cn/20210318002634984.gif#pic_center" alt="在这里插入图片描述"><br>创建项目，配置工作区域<br> 1、创建一个本地文件夹，作为项目文件。<br><img data-src="https://img-blog.csdnimg.cn/20210318002732642.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img data-src="https://img-blog.csdnimg.cn/2021031800275327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 2、配置工作区域<br>点击设置，打开配置文件<br><img data-src="https://img-blog.csdnimg.cn/20210318003157940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>！[在这里插入图片描述](<span class="exturl" data-url="aHR0cHM6Ly9pbWctYmxvZw==">https://img-blog</span></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;目标&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#目标&quot;&gt;#&lt;/a&gt; 目标&lt;/h2&gt;
-&lt;p&gt;去除 iconfinder 上 icon 的水印&lt;/p&gt;
-&lt;h3 id=&quot;原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; h</summary>
+    <summary type="html">&lt;h2 id=&quot;软件准备&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#软件准备&quot;&gt;#&lt;/a&gt; 软件准备&lt;/h2&gt;
+&lt;p&gt;首先，我们必须先下载好 Python 的安装包和 VScode 的安装包。&lt;br&gt;
+下载地址如下：&lt;br&gt;
+Python：&lt;spa</summary>
       
     
     
