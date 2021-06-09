@@ -100,12 +100,12 @@ Yume Shoka = Hexo</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
         </ul>
       </div>
     </header>
@@ -194,9 +194,25 @@ yapf 是一个代码格式化工具，可以一键美化代码。<br>
 <img data-src="https://img-blog.csdnimg.cn/20210318002732642.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
 <img data-src="https://img-blog.csdnimg.cn/2021031800275327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
  2、配置工作区域<br>
-点击设置，打开配置文件<br>
-<img data-src="https://img-blog.csdnimg.cn/20210318003157940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUwMjQ0NDYz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>
-！[在这里插入图片描述](<span class="exturl" data-url="aHR0cHM6Ly9pbWctYmxvZw==">https://img-blog</span></p>
+点击设置，打开配置文件</p>
+<p>配置 flake8 和 yapf 并关闭 pylint 工具。<br>
+在工作区域输入以下内容：<br>
+{<br>
+“python.linting.flake8Enabled”: true,<br>
+“python.formatting.provider”: “yapf”,<br>
+“python.linting.flake8Args”: [&quot;–max-line-length=248&quot;],<br>
+“python.linting.pylintEnabled”: false,<br>
+“editor.formatOnType”: true,<br>
+“editor.formatOnSave”: true<br>
+}</p>
+<p>其中 &quot;editor.formatOnType&quot;: true,<br>
+“editor.formatOnSave”: true 代码保存时自动格式化且 F5 直接运行 Python</p>
+<p>3、编写 python 文件<br>
+新建一个 python 文件，输入一句</p>
+<p>print(“Hello VScode”)<br>
+ 连续按 F5 执行文件。<br>
+如图所示：</p>
+<p>最后如果报如图所示的错误在代码后边回车一行空代码即可</p>
 
   </div>
 
@@ -208,7 +224,7 @@ yapf 是一个代码格式化工具，可以一键美化代码。<br>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2021-06-09 15:55:49" itemprop="dateModified" datetime="2021-06-09T15:55:49+08:00">2021-06-09</time>
+    <time title="Modified: 2021-06-09 16:01:36" itemprop="dateModified" datetime="2021-06-09T16:01:36+08:00">2021-06-09</time>
   </span>
 </div>
 
@@ -265,7 +281,7 @@ yapf 是一个代码格式化工具，可以一键美化代码。<br>
     <div class="item right">
       
 
-  <a href="/2021/06/09/a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="a">
+  <a href="/2021/06/09/a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4wqtg4j20zk0m8x6p.jpg" title="a">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>a</h3>
